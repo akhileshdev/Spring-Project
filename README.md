@@ -1,2 +1,2 @@
-# Spring-Project
+# Spring
 Spring from scratch
