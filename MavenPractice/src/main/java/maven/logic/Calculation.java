@@ -16,7 +16,7 @@ public class Calculation
 	 
 	 public static int squareNum(int num)
 	 {
-		  return num*num;
+		  return num*num;  //square of a number
 	 }
 
 }
