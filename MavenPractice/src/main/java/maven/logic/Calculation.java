@@ -18,5 +18,23 @@ public class Calculation
 	 {
 		  return num*num;  //square of a number
 	 }
+	 
+	 public static long reverseNum(long num)
+	 {
+		 long rev = 0;
+		 int temp;
+		 
+		 while(num > 0)
+		 {
+			 temp = (int)num%10;
+			 
+			 rev  =  rev*10 + temp;
+			 
+			 num /= 10;
+		 }
+		
+		System.out.println("Rev : "+rev); 
+		return rev; 
+	 }
 
 }
