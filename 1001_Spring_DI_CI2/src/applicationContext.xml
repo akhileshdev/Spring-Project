@@ -10,7 +10,7 @@
 <bean id="empbean" class="com.spring.demo.Employee">  
 
 <constructor-arg name = "id" value = "101"/>
-<constructor-arg value = "Akhilesh Kumar"/>
+<constructor-arg name = "name" value = "Akhilesh Kumar"/>
   
 </bean>  
   
