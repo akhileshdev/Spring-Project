@@ -7,7 +7,7 @@ public class Question
 {
     private int id;
     private String question;    
-    private List<Answer> answers;
+    private List<Answer> answers;  //collection with dependent object
     
 	public Question(int id,String question,List<Answer> answers) 
 	{
