@@ -24,7 +24,7 @@ public class Question
 		
 		System.out.println("\nAnswers are :-");
 		
-		Iterator <String> itr = answer.iterator();
+		Iterator <String> itr = answer.iterator();   //using list here, in collection
 		while(itr.hasNext())
 		{
 			System.out.println(itr.next());
