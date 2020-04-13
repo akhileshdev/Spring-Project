@@ -9,8 +9,8 @@
   
 <bean id="empbean" class="com.spring.demo.Employee">  
 
-<constructor-arg name = "id" value = "101" type = "int"/>
-<constructor-arg name = "name" value = "Akhilesh Kumar"/>
+<constructor-arg value = "101"/>
+<constructor-arg value = "Akhilesh Kumar"/>
   
 </bean>  
   
