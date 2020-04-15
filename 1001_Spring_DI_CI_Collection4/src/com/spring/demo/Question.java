@@ -31,8 +31,8 @@ public class Question
 		{
 			Entry<Answer,User> entry = itr.next();
 			
-			Answer ans = entry.getKey();
-			User user = entry.getValue();
+			Answer ans = entry.getKey();     //fetching key as an Object
+			User user = entry.getValue();    //fetching value as an Object
 			
 			System.out.println(ans.toString());
 			System.out.println(user.toString()+"\n");			
