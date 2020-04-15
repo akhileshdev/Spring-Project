@@ -22,8 +22,8 @@ public class Question
 	{		
 		System.out.println("\nQuestion : [ ID : "+id+" Ques : "+name+" ]");
 		
-		Set<Entry<String,String>> set = answer.entrySet();		
-		Iterator<Entry<String,String>>  itr = set.iterator();
+		Set<Entry<String,String>> set = answer.entrySet();   //set of entries		 
+		Iterator<Entry<String,String>>  itr = set.iterator(); //getting iterator
 	
 		
 		while(itr.hasNext())
