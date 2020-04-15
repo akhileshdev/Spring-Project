@@ -12,7 +12,7 @@ public class Test
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		Employee emp = (Employee)context.getBean("emp1");
+		Employee emp = (Employee)context.getBean("emp1");  //calling bean emp1 without dependent object
 		
 		emp.displayInfo();
 
