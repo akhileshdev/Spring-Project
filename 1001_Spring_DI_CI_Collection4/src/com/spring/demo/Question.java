@@ -9,7 +9,7 @@ public class Question
 {
     private int id;
     private String ques;
-    private Map<Answer,User> answer;
+    private Map<Answer,User> answer;  //map with dependent object
     
 	public Question(int id,String ques,Map<Answer,User> answer) 
 	{
@@ -24,7 +24,7 @@ public class Question
 		System.out.println("Question : [ ID : "+id+" Question : "+ques);
 		System.out.println("Answer :-");
 		
-		Set<Entry<Answer,User>> set = answer.entrySet();		
+		Set<Entry<Answer,User>> set = answer.entrySet();	
 		Iterator<Entry<Answer,User>> itr = set.iterator();
 		
 		while(itr.hasNext())
