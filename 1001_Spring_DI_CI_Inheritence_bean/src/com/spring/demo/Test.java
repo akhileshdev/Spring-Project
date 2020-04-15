@@ -12,7 +12,8 @@ public class Test
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		Employee emp = (Employee)context.getBean("emp1");  //calling bean emp1 without dependent object
+		Employee emp = (Employee)context.getBean("emp2");  //calling bean emp1 implicitly without dependent object 
+		                                                   //calling bean emp2 explicitly here 
 		
 		emp.displayInfo();
 
