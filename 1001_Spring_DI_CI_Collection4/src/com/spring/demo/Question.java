@@ -25,7 +25,7 @@ public class Question
 		System.out.println("Answer :-");
 		
 		Set<Entry<Answer,User>> set = answer.entrySet();  //converting Map into Set	
-		Iterator<Entry<Answer,User>> itr = set.iterator();
+		Iterator<Entry<Answer,User>> itr = set.iterator();  //getting an iterator 
 		
 		while(itr.hasNext())
 		{
