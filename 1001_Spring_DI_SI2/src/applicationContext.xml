@@ -9,7 +9,7 @@
 
 <bean id = "addr" class = "com.spring.demo.Address"> 
 
-<property name = "street" value = "Rahawendra Colony"/>
+<property name = "street" value = "Raghawendra Colony"/>
 <property name = "city" value = "Hyderabad"/>
 <property name = "state" value = "Telangana"/>
 
