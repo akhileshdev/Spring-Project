@@ -52,8 +52,8 @@ public class Question
 		{
 			Entry<Answer,User> entry = itr.next();
 			
-			Answer ans = entry.getKey();
-			User user = entry.getValue();
+			Answer ans = entry.getKey();   //fetching dependent Object as Map element 
+			User user = entry.getValue();  //fetching dependent Object as Map element 
 			
 			System.out.println(ans);     //implicit call to ans.toString() method
 			System.out.println(user);    //implicit call to user.toString() method
