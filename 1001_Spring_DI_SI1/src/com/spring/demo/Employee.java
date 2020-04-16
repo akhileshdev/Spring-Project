@@ -2,8 +2,8 @@ package com.spring.demo;
 
 public class Employee 
 { 
-	private int id;
-	private String name;
+	private int id;       //primitive value
+	private String name;  //primitive value
 	
 	
 	//using setter injection
