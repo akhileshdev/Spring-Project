@@ -55,8 +55,8 @@ public class Question
 			Answer ans = entry.getKey();
 			User user = entry.getValue();
 			
-			System.out.println(ans);
-			System.out.println(user);
+			System.out.println(ans);     //implicit call to ans.toString() method
+			System.out.println(user);    //implicit call to user.toString() method
 		}
 		
 		

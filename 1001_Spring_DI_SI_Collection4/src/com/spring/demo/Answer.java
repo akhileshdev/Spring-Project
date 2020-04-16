@@ -9,7 +9,7 @@ public class Answer
       private int id;
       private String answer;
       private String by;
-      private Date postedDate;
+      private Date postedDate;  //Date object
       
       
 	public int getId() {
