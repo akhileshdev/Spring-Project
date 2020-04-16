@@ -5,6 +5,8 @@ public class Employee
 	private int id;
 	private String name;
 	
+	
+	//using setter injection
 	public int getId() 
 	{
 		return id;
