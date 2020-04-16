@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+               
+<bean id = "ans1" class = "com.spring.demo.Answer">               
+
+<property name = "id"  value = "1"/>
+<property name = "answer" value = "It is an Object Oriented Language"/>
+<property name = "by"  value = "Akhilesh Kumar"/>
+
+</bean>
+
+
+<bean id = "ans2" class = "com.spring.demo.Answer">               
+
+<property name = "id"  value = "2"/>
+<property name = "answer" value = "It is a Robust programming language"/>
+<property name = "by"  value = "Abhishek Kumar"/>
+
+</bean>
+               
+
+<bean id = "quest" class = "com.spring.demo.Question">               
+
+<property name = "id"  value = "101"/>
+<property name = "ques" value = "what is Java ? "/>
+
+<property name = "answer">
+<list>
+
+<ref bean = "ans1"/>
+<ref bean = "ans2"/>
+
+</list>
+</property>
+
+</bean>
+
+
+
+
+
+</beans>                
