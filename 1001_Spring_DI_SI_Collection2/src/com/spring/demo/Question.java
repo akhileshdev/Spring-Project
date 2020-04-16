@@ -41,11 +41,11 @@ public class Question
 	{
         System.out.println("\nQuestion : [ID : "+id+" Question : "+question+" ]");
         
-        Iterator<String> itr = answer.iterator();
+        Iterator<String> itr = answer.iterator();   //iterating over String elements of List
         
         while(itr.hasNext())
         {
-        	System.out.println(itr.next());
+        	System.out.println(itr.next());  //string as List element
         }
 	}
 
