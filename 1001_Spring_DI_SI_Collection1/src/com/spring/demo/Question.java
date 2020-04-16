@@ -7,7 +7,7 @@ public class Question
 {
      private int id;
      private String ques;
-     private List<Answer> answer;
+     private List<Answer> answer;   //HAS-A relation with dependent object 'Aggregation Relation'
      
      
 	public int getId() 
