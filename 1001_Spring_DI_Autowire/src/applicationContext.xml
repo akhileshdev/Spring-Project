@@ -9,6 +9,8 @@
 
 
 <bean id = "b1" class = "com.spring.demo.B"/>
-<bean id = "a" class = "com.spring.demo.A"  autowire = "byName"/>           
+<bean id = "a" class = "com.spring.demo.A"  autowire = "byType"/>    
+ 
+<!-- byType Autowire -->      
                
 </beans>               
