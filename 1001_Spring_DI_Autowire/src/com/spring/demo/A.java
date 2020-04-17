@@ -3,6 +3,7 @@ package com.spring.demo;
 public class A 
 {
     private B b;  //Reference 'b' name must be same as Bean ID in xml file
+                  //if bean ID name is not same as reference name then setter injection of B will not be invoked.
     
 	public A() 
 	{
@@ -13,7 +14,8 @@ public class A
 		return b;
 	}
 
-	public void setB(B b) {
+	public void setB(B b) 
+	{
 		this.b = b;
 	}
 	
