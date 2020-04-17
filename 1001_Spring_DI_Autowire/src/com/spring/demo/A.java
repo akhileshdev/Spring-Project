@@ -2,7 +2,7 @@ package com.spring.demo;
 
 public class A 
 {
-    private B b;
+    private B b;  //Reference 'b' name must be same as Bean ID in xml file
     
 	public A() 
 	{
