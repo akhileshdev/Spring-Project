@@ -11,7 +11,7 @@ public class A
 	
 	public static A getA()
 	{
-		return a;
+		return a;    //static factory method returning instance of own class
 	}
 	
 	public void display()
