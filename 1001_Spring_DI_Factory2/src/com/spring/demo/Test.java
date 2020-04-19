@@ -11,7 +11,7 @@ public class Test
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		Printable p = (Printable)context.getBean("p");
+		Printable p = (Printable)context.getBean("p"); //casting to interface type
 		
 		p.print();
 
