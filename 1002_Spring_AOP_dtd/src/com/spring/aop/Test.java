@@ -13,6 +13,8 @@ public class Test
 		
 		A obj = (A)context.getBean("proxy",A.class);
 		
+		System.out.println("Class Name : "+obj.getClass().getName());
+		
 		obj.meth(); //Actual method call 'Join Point'
 		
 

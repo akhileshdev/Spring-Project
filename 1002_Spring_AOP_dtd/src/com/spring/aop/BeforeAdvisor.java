@@ -17,6 +17,12 @@ public class BeforeAdvisor implements MethodBeforeAdvice
 		System.out.println("Method Modifiers : "+method.getModifiers());
 		System.out.println("Method Parameter Count : "+method.getParameterCount());
 		
+		for(Object ob : args)
+			System.out.println(ob.toString());
+		
+		
+			
+		
 		
 	}
 
