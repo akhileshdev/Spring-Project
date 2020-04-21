@@ -11,7 +11,7 @@ public class Test
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-	    A obj = (A)context.getBean("proxy",A.class);
+	    A obj = (A)context.getBean("proxy",A.class); //AFter
 	    
 	    obj.method();
 
