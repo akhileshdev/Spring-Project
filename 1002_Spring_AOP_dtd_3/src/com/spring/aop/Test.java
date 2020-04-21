@@ -12,7 +12,7 @@ public class Test
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		Logic obj = (Logic)context.getBean("proxy",Logic.class);
+		Logic obj = (Logic)context.getBean("proxy",Logic.class);  //logic's object is getting proxied
 		
 		obj.business();
 		
