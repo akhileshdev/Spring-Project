@@ -8,7 +8,7 @@ import org.aspectj.lang.annotation.Pointcut;
 @Aspect
 public class TrackApplication 
 {
-	@Pointcut("execution(* Logic.*(..))")    
+	@Pointcut("execution(int Logic.*(..))")    
 	public void doSome(){}                 //pointcut name
 	
 	
