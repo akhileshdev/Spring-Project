@@ -12,12 +12,10 @@ public class TrackApplication
 	public void doSome(){}                 //pointcut name
 	
 	
-    @Before("doSome()")                       
-	public void myAdvice(JoinPoint jp)
-	{
-		
-    	System.out.println("Addition Concern before Actual Business Logic");
-    	
+    @Before("doSome()")         //applying the pointcut here BeforeAdvice                      
+	public void myAdvice(JoinPoint jp)    //Advice method
+	{		
+    	System.out.println("Addition Concern before Actual Business Logic");   	
     	System.out.println("Method Signature : "+jp.getSignature());
     	
 	}
