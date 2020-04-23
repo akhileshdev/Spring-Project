@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:aop="http://www.springframework.org/schema/aop" 
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+               http://www.springframework.org/schema/aop   
+               http://www.springframework.org/schema/aop/spring-aop-3.0.xsd">
+               
+<aop:aspectj-autoproxy/>
+
+<bean id = "logicBean" class = "com.spring.aop.Logic"/>
+<bean id = "aspectBean" class = "com.spring.aop.AspectClass"/>               
+               
+<aop:config>
+<aop:aspect id = "MyAspect" ref = "aspectBean">
+
+<aop:pointcut expression="execution(* com.spring.aop.Logic.*(..))" id="afterThrowingPointcut"/>
+<aop:after-throwing method="myadvice" throwing = "error" pointcut-ref = "afterThrowingPointcut"/>
+
+
+</aop:aspect>
+</aop:config>               
+               
+               
+               
+ </beans>              
+               
