@@ -11,11 +11,11 @@ public class Test
 		
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		FriendDao fr = (FriendDao)context.getBean("friendDao");
+		FriendDao fr = (FriendDao)context.getBean("fdao");
 		
-		int status = fr.saveFriend(new Friend(901,"Santosh Kumar",32));
+		int status = fr.deleteFriend(new Friend(901,"Santosh Kumar",32));
 		
-		System.out.println("Status : "+status);
+		System.out.println("\nStatus : "+status);
 		
 			
 

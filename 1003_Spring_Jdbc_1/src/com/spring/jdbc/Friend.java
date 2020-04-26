@@ -9,6 +9,16 @@ public class Friend
 	{
 		// TODO Auto-generated constructor stub
 	}
+    	
+	
+	public Friend(int id,String name, int age) 
+	{
+		super();
+		this.id = id;
+		this.age = age;
+		this.name = name;
+	}
+
 
 	public int getId() {
 		return id;
