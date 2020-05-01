@@ -28,7 +28,7 @@ public class FriendDao
 	{
 		String str =  "select *from friend";
 		
-		return jdbcTemplate.query(str, new ResultSetExtractor<List<Friend>>()
+		return jdbcTemplate.query(str,new ResultSetExtractor<List<Friend>>()
 				{
 			       @Override
 			       public List<Friend> extractData(ResultSet rs) throws SQLException,DataAccessException
@@ -40,9 +40,14 @@ public class FriendDao
 			    	   {
 			    		   Friend fr = new Friend();
 			    		   
-			    		   fr.setId(rs.getInt(1));
+			    		   fr.setId(rs.getInt(1));			    		   
+			    		   //System.out.print("ID : "+rs.getInt(1));
+			    		   
 			    		   fr.setName(rs.getString(2));
+			    		   //System.out.print("Name : "+rs.getString(2));
+			    		   
 			    		   fr.setId(rs.getInt(3));
+			    		   //System.out.println("Age : "+rs.getInt(3));
 			    		   
 			    		   lis.add(fr);
 			    	   }

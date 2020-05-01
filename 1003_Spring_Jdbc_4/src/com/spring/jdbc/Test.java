@@ -14,15 +14,12 @@ public class Test
         
 		ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 		
-		FriendDao fd = (FriendDao)context.getBean("fdao");
-		
-		List<Friend> list = new ArrayList<Friend>();
-		
-		list = fd.displayFriend();
+		FriendDao fd = (FriendDao)context.getBean("fdao");			
+		List<Friend> lis = fd.displayFriend();
 		
 		System.out.println("\nDisplaying Friend :-");
-		for(Friend fr : list)
-			System.out.println(fr);
+		for(Friend fr : lis)
+			System.out.println("ID : "+fr.getId()+" Name : "+fr.getName()+" Age : "+fr.getAge()); //incorrect data displaying
 		
 	}
 
