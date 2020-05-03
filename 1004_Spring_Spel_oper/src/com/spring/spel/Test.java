@@ -17,9 +17,13 @@ public class Test
 		
 		ExpressionParser parser = new SpelExpressionParser();
 		
-		System.out.println("Parser : "+parser.parseExpression("'Welcome to '+'Spring Spel'").getValue());
+		System.out.println("Parser : "+parser.parseExpression("'Welcome to '+'Spring Spel'").getValue()); //Arithmetic
 		
-		System.out.println("Parser : "+parser.parseExpression("10*10/2").getValue());
+		System.out.println("Parser : "+parser.parseExpression("10*10/2").getValue()); //Arithmetic
+		
+		System.out.println("Parser : "+parser.parseExpression("true and true").getValue()); //Logical
+		
+		System.out.println("Parser :"+parser.parseExpression("'Akhilesh'.length() == 8").getValue()); //Relational 
 		
 
 	}
