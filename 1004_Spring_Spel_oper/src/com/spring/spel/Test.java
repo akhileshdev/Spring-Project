@@ -19,7 +19,7 @@ public class Test
 		
 		System.out.println("Parser : "+parser.parseExpression("'Welcome to '+'Spring Spel'").getValue()); //Arithmetic		
 		System.out.println("Parser : "+parser.parseExpression("10*10/2").getValue()); //Arithmetic
-        System.out.println("Parser : "+parser.parseExpression("'Today is : '+new java.util.Date()").getValue());
+        System.out.println("Parser : "+parser.parseExpression("'Today is : '+new java.util.Date()").getValue()); //Arithmetic
 		
 		
 		
