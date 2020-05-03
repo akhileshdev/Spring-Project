@@ -19,6 +19,8 @@ public class Test
 		
 		System.out.println("Parser : "+parser.parseExpression("'Welcome to '+'Spring Spel'").getValue());
 		
+		System.out.println("Parser : "+parser.parseExpression("10*10/2").getValue());
+		
 
 	}
 
