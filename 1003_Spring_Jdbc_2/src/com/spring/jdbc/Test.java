@@ -19,7 +19,7 @@ public class Test
         
     	int status = fr.deleteFriend(f); 
     	
-        System.out.println("Status of Query : "+status);
+        System.out.println("\n\nStatus of Query : "+status);
     	
     }
 
