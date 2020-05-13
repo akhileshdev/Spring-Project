@@ -18,6 +18,8 @@ public class TestLogic
 	public void findSquare()
 	{
 		Assert.assertEquals(25,Calculation.squareNum(5));
+		
+		//Nothing new just a comment
 	}
 	
 	@Test
