@@ -10,7 +10,7 @@ public class HelloController
 	@RequestMapping("/")
 	public String display()
 	{
-		return "index";
+		return "index"; //to call index.jsp page
 	}
 	
 	
