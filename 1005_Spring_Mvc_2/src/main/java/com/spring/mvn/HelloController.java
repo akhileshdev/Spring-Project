@@ -11,4 +11,10 @@ public class HelloController
       {
     	  return "helloSpring.jsp";
       }
+	  
+	  @RequestMapping("/request2")
+      public String MVChello()
+      {
+    	  return "helloMVC.jsp";
+      }
 }

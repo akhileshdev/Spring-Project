@@ -2,12 +2,16 @@
     pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 <html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
 
 <body>
-<h2>Welcome to Spring MVC !!</h2>
-
-<a href="request2">Click here..</a>
+<h1>Welcome to Spring MVC with Multiple View !!</h1>
 </body>
+
 
 
 </html>
