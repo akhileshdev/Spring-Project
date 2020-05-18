@@ -9,6 +9,6 @@ public class HelloController
 	  @RequestMapping("/request1")
       public String hello()
       {
-    	  return "index.jsp";
+    	  return "helloSpring.jsp";
       }
 }
