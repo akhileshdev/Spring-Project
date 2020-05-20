@@ -9,12 +9,12 @@ public class HelloController
 	  @RequestMapping("/request1")
       public String hello()
       {
-    	  return "helloSpring.jsp";
+    	  return "helloSpring.jsp";  //1st request, i.e 1st view
       }
 	  
 	  @RequestMapping("/request2")
       public String MVChello()
       {
-    	  return "helloMVC.jsp";
+    	  return "helloMVC.jsp";   //2nd request, i.e another view
       }
 }
