@@ -13,6 +13,9 @@ public class HelloController
       {   
 		  //Using @RequestParam Annotation to Bind form data to parameter of methods 
 		  
+		  //Hence Extra code and HttpsServletRequest is not required.
+		  
+		  
     	   //String name = req.getParameter("uname");
     	   //String pass = req.getParameter("upass");
 		  
