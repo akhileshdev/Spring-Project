@@ -11,10 +11,9 @@ public class HelloController
 	  @RequestMapping("/request")
       public String hello(@RequestParam("uname")String name,@RequestParam("upass")String pass,Model m)
       {   
-		  //Using @RequestParam Annotation to Bind form data to parameter of methods 
-		  
+		  //Using @RequestParam Annotation to Bind form data to parameter of methods 		  
 		  //Hence Extra code and HttpsServletRequest is not required.
-		  
+		  //It is better and compact code
 		  
     	   //String name = req.getParameter("uname");
     	   //String pass = req.getParameter("upass");
