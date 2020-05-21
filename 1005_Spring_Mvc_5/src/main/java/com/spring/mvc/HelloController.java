@@ -10,7 +10,9 @@ public class HelloController
 {     
 	  @RequestMapping("/request")
       public String hello(@RequestParam("uname")String name,@RequestParam("upass")String pass,Model m)
-      {
+      {   
+		  //Using @RequestParam Annotation to Bind form data to parameter of methods 
+		  
     	   //String name = req.getParameter("uname");
     	   //String pass = req.getParameter("upass");
 		  
