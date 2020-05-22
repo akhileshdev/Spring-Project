@@ -16,6 +16,8 @@ public class HelloController
 		Reservation res = new Reservation();
 		model.addAttribute("reservation",res);
 		
+		//reservation-page will receive "Reservation" object as model attribute
+		//we are passing that attribute through Model reference 'model'
 		return "reservation-page.jsp";
 	}	
 	
