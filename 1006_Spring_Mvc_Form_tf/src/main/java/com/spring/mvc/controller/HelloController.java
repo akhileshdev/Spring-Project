@@ -23,7 +23,9 @@ public class HelloController
 	
 	@RequestMapping("/submitForm")
     public String submitForm(@ModelAttribute("reservation")Reservation res)
-    {    		
+    {   
+		
+		//confirmation-page will receive "Reservation" object data in identifier 'res'
 		return "confirmation-page.jsp";
     }
 	
