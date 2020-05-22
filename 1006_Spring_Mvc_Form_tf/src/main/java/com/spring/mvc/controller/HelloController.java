@@ -24,8 +24,9 @@ public class HelloController
 	@RequestMapping("/submitForm")
     public String submitForm(@ModelAttribute("reservation")Reservation res)
     {   
+		//with @ModelAttribute("reservation") method, submitForm() will extract data from view page in "reservation" identifier
+		//And value in 'reservation' will be binded with method parameter 'res' 
 		
-		//confirmation-page will receive "Reservation" object data in identifier 'res'
 		return "confirmation-page.jsp";
     }
 	
