@@ -16,7 +16,7 @@ public class HelloController
 		 Reservation rs = new Reservation();
 		 model.addAttribute("reservation",rs);
     	 
-		 return "reservation-page.jsp";
+		 return "reservation-page.jsp"; //It will simply redirect to page reservation-page.jsp
      }
 	 
 	 @RequestMapping("/submitFormRequest")
