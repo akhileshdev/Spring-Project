@@ -13,7 +13,7 @@ public class HelloController
 	 @RequestMapping("/reservationFormRequest")  //It will map incoming request with name "reservationFormRequest" to below method for processing
      public String reservationProcess(Model model)
      {   
-		 Reservation rs = new Reservation();
+		 Reservation rs = new Reservation();  //Creating Reservation class Object to add it in model object
 		 model.addAttribute("reservation",rs);
     	 
 		 return "reservation-page.jsp"; //It will simply redirect to page reservation-page.jsp
