@@ -12,8 +12,9 @@ public class HelloController
 	  @RequestMapping("/reservationRequest")  //this method will do processing for request 'reservationRequest'
       public String bookingProcessing(Model model)
       {
-    	  Reservation rs = new Reservation();
-		  model.addAttribute("reservation",rs);
+    	  Reservation rs = new Reservation();  //creating Reservation Object
+		  model.addAttribute("reservation",rs); //adding that object as an attribute in Model class 
+		                                        //so that it can be accessed in view pages  
     	      	  
 		  return "reservation-page.jsp";  //method will return 'reservation-page.jsp' as a response for the request
       }
