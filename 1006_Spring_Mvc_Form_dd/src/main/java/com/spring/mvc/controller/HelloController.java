@@ -19,7 +19,7 @@ public class HelloController
 		 return "reservation-page.jsp"; //It will simply redirect to page reservation-page.jsp
      }
 	 
-	 @RequestMapping("/submitFormRequest")
+	 @RequestMapping("/submitFormRequest") //It will map incoming request with name "submitFormRequest" to below method for processing
 	 public String confirmationProcess(@ModelAttribute("reservation")Reservation rs)
 	 {
 		 return "confirmation-page.jsp"; //It will simply redirect to page confirmation-page.jsp
