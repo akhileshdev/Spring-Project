@@ -18,7 +18,8 @@ public class HelloController
     	 
 		 return "reservation-page.jsp"; //It will simply redirect to page reservation-page.jsp
 		 
-		 //Model class attributed added here will be passed to other view pages
+		 //Model class attributed added here will be passed to other view pages 
+		 //so that bean class fields can be accessed from view pages with the help of added attribute with name ('reservation' in this case)
      }
 	 
 	 @RequestMapping("/submitFormRequest") //It will map incoming request with name "submitFormRequest" to below method for processing
