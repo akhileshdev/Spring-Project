@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class HelloController 
 {     
-	  @RequestMapping("/reservationRequest")
+	  @RequestMapping("/reservationRequest")  //this method will do processing for request 'reservationRequest'
       public String bookingProcessing(Model model)
       {
     	  Reservation rs = new Reservation();

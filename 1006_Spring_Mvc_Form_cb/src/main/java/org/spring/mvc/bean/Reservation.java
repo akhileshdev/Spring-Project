@@ -8,8 +8,7 @@ public class Reservation
     private String lastName;
     private String gender;
     private String []food;  // there can be multiple option for food hence taking array
-    
-    
+       
     
 	public Reservation() 
 	{
