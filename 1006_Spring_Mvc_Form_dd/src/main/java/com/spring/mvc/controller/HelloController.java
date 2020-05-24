@@ -22,6 +22,6 @@ public class HelloController
 	 @RequestMapping("/submitFormRequest")
 	 public String confirmationProcess(@ModelAttribute("reservation")Reservation rs)
 	 {
-		 return "confirmation-page.jsp";
+		 return "confirmation-page.jsp"; //It will simply redirect to page confirmation-page.jsp
 	 }
 }
