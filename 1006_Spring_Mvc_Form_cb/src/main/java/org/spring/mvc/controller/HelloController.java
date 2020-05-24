@@ -15,7 +15,7 @@ public class HelloController
     	  Reservation rs = new Reservation();
 		  model.addAttribute("reservation",rs);
     	      	  
-		  return "reservation-page.jsp";
+		  return "reservation-page.jsp";  //method will return 'reservation-page.jsp' as a response for the request
       }
 	  
 	  @RequestMapping("/submitForm")
