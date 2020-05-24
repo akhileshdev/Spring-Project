@@ -1,11 +1,13 @@
 package org.spring.mvc.bean;
 
+//It is our bean class 
+
 public class Reservation 
 {
     private String firstName;
     private String lastName;
     private String gender;
-    private String []food;
+    private String []food;  // there can be multiple option for food hence taking array
     
     
     
