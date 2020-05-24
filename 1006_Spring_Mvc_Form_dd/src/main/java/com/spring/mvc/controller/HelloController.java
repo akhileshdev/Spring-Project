@@ -10,7 +10,7 @@ import com.spring.mvc.bean.Reservation;
 @Controller
 public class HelloController 
 {    
-	 @RequestMapping("/reservationFormRequest")
+	 @RequestMapping("/reservationFormRequest")  //It will map incoming request with name "reservationFormRequest" to below method for processing
      public String reservationProcess(Model model)
      {   
 		 Reservation rs = new Reservation();
