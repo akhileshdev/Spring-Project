@@ -23,6 +23,6 @@ public class HelloController
 	  public String confirmationProcessing(@ModelAttribute("reservation")Reservation rs)
 	  {
 		  
-		  return "confirmation-page.jsp";
+		  return "confirmation-page.jsp";  //method will return 'confirmation-page.jsp' after processing request 'submitForm'
 	  }
 }
