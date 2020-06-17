@@ -6,6 +6,8 @@ public class Emp
 	private String name;
 	private String designation;
 	private float salary;
+	
+	
 	public int getId() {
 		return id;
 	}

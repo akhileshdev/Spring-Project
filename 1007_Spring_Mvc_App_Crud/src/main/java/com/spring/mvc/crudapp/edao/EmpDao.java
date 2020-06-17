@@ -56,15 +56,18 @@ public class EmpDao
 	public List<Emp> getEmployees()
 	{
 		return template.query("select *from employee",new RowMapper<Emp>()
-		{			
+		{	
+			@Override
 			public Emp mapRow(ResultSet rs,int row) throws SQLException
 			{
 				Emp e = new Emp();
 				
-				e.setId(rs.getInt(1));
-				e.setName(rs.getString(2));
-				e.setSalary(rs.getFloat(3));
-				e.setDesignation(rs.getString(4));
+				e.setId(rs.getInt("id"));   //Extracting parameter "id" from ResultSet which is nothing but table column "id"
+				                            //Then setting up employee object "e" with setter method.
+				
+				e.setName(rs.getString("name"));
+				e.setDesignation(rs.getString("designation"));
+				e.setSalary(rs.getFloat("salary"));
 				
 				return e;
 			}

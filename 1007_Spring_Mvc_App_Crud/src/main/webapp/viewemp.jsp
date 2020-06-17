@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" isELIgnored = "false"
     pageEncoding="ISO-8859-1"%>
 
 <%@ taglib uri = "http://www.springframework.org/tags/form" prefix = "form" %>
@@ -20,15 +20,16 @@
          <th>Delete</th>
         </tr> 
         
-        <cor:forEach var = "emp" items= "${list}">
-           <td>${emp.id}</td>
-           <td>${emp.name}</td>
-           <td>${emp.salary}</td>
-           <td>${emp.designation}</td>
+        <cor:forEach var = "empl" items= "${list}">
+         <tr>
+           <td>${empl.id}</td>
+           <td>${empl.name}</td>
+           <td>${empl.salary}</td>
+           <td>${empl.designation}</td>
            
-           <td><a href = "editemp/${emp.id}">Edit</a></td>
-           <td><a href = "deleteemp/${emp.id}">Delete</a></td> 
-             
+           <td><a href = "editemp/${empl.id}">Edit</a></td>
+           <td><a href = "deleteemp/${empl.id}">Delete</a></td> 
+          </tr>   
         </cor:forEach>
          
        </table>  

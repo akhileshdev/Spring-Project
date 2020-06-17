@@ -55,7 +55,7 @@ public class EmpControllers
 	}
 	
 	
-	@RequestMapping("/viewEmployeeRequest")
+	@RequestMapping(value = "/viewEmployeeRequest", method = RequestMethod.GET)
 	public String viewEmployee(Model m)
 	{
 		List<Emp> list  = dao.getEmployees();
